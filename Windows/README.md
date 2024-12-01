@@ -19,7 +19,7 @@ This section of the repository contains scripts tailored specifically for Window
 
 ---
 
-### 🚀 How to Use via BLE  
+## 🚀 How to Use via BLE  
 
 1. **Prepare the Payload**: Transfer the desired `.txt` file(s) to your Flipper Zero device.  
 2. **Activate BLE Mode**: Enable Bluetooth on your Flipper Zero via the **Bluetooth Settings** menu.  
