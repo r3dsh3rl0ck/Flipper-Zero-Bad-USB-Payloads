@@ -6,8 +6,7 @@ This section of the repository contains scripts tailored specifically for Window
 
 | Name                            | Description                              |  USB  | BLE  |
 |---------------------------------|------------------------------------------|--------------|--------------|
-   |
-| [wifi-dump.txt](wifi-dump.txt)  | Extracts saved Wi-Fi SSID and passwords and stores them locally. | ✅ Yes       | ❓  Not Tested        |
+| [wifi-dump.txt](wifi-dump.txt)  | Extracts saved Wi-Fi SSID and passwords and stores them locally, in the `Documents` folder | ✅ Yes       | ❓  Not Tested        |
 
 ---
 
