@@ -8,6 +8,7 @@ This section of the repository contains scripts tailored specifically for Window
 | ---------------------------------|------------------------------------------|--------------|--------------|
 | [wifi-dump.txt](wifi-dump.txt)  | Extracts saved Wi-Fi SSID and passwords and stores them locally. | ✅ Yes       | ❓  Not Tested        |
 | [reverse-shell.txt](reverse-shell.txt) | To use this reverse shell payload, you need to configure the **IP** and **port** <br> for a proper connection. <br>  **Constraints** <br> Ensure that **Windows Defender's real-time protection** is disabled. <br> Alternatively, disable any other antivirus software. <br>**Listener**<br>Before executing the `payload` make sure to set up a listener on your machine. <br> For example, use the following command:  ` nc -lvnp <port> ` |  ✅ Yes       | ❓  Not Tested |
+| [error-messageboxes.txt](error-messageboxes.txt) | This payload displays 10 fake error message dialog boxes sequentially. <br>Each message box is created in an independent PowerShell process. | ✅ Yes       | ❓  Not Tested |
 
 ---
 

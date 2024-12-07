@@ -1,0 +1,10 @@
+REM Author: r3dsh3rl0ck
+REM Description: 10 fake error messages pop up one after the other, independent of the PowerShell session.
+DELAY 500
+GUI r
+DELAY 500
+STRING cmd.exe
+ENTER
+DELAY 4000
+STRING for /l %i in (1,1,10) do start powershell -WindowStyle Hidden -Command "Add-Type -AssemblyName PresentationFramework; [System.Windows.MessageBox]::Show('You have been Hacked. Please contact IT :P.','Critical Error',[System.Windows.MessageBoxButton]::OK,[System.Windows.MessageBoxImage]::Error)"
+ENTER
