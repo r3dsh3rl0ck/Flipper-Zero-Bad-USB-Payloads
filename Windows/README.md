@@ -2,6 +2,8 @@
 
 This section of the repository contains scripts tailored specifically for Windows operating systems, designed to leverage the Flipper Zero's Bad USB functionality for Ethical purposes.
 
+⚠️ **Warning**: You must adjust the `DELAY` commands in the payload to match the performance of your target computer. Some computers may require longer or shorter delays for the commands to execute correctly.
+
 ---
 
 | Name                            | Description                              |  USB  | BLE  |

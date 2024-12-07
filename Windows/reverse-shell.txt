@@ -1,4 +1,5 @@
-REM Reverse Shell Initiator for Flipper Zero
+REM Author: r3dsh3rl0ck
+REM Description: Reverse Shell Initiator for Flipper Zero
 DELAY 2000
 REM Open cmd.exe
 GUI r
